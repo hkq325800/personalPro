@@ -1,0 +1,49 @@
+header.head-container
+{
+    width:100%;
+    height:40px;
+    background: rgb(51, 36, 226);
+    filter:alpha(opacity=60); /*IE滤镜，透明度50%*/
+    -moz-opacity:0.6; /*Firefox私有，透明度50%*/
+    opacity:0.4;/*其他，透明度50%*/
+    position: fixed;
+    top:0;
+    left:0;
+    padding:0 1%;
+    z-index: 220;
+}
+@media(min-width:736px){
+	header.head-container
+	{
+		 padding:0 1%;
+	}
+}
+a.logo-container{
+    line-height: 100%;
+    display: inline-block;
+    height: 100%;
+    padding-top: 7px;
+    color:white;
+    display:inline-block;
+    text-decoration:none;
+}
+div.login-container
+{
+    float: right;
+    height:100%;
+    line-height: 40px;
+    color:white;
+}
+a.login-btn-grey
+{
+    padding:4px 6px;
+    margin-left: 10px;
+    text-decoration: none;
+    color:white;
+    transition:color 0.5s;
+}
+
+a.login-btn-grey:hover
+{
+	color:#da6426;
+}
