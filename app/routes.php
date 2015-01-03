@@ -1,5 +1,4 @@
 <?php
-
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -25,6 +24,7 @@ Route::get('/getWeibotop10', 'AdminController@getWeibotop10');
 Route::get('/saveCustom','AdminController@saveCustom');
 Route::get('/getCity','AdminController@getCity');
 Route::get('/getCounty','AdminController@getCounty');
+Route::get('/getCaptcha','AdminController@getCaptcha');
 
 
 /*//你也可以在 matched 事件上注册一个监听器，当一个传入请求已经和一个路由相匹配，但还未执行此路由之前，此事件就会被触发：

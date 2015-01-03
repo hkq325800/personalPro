@@ -103,7 +103,7 @@ function showSignUpPanel(){
 	    "<div class = 'warning-container' id = 'warning1'></div>"+
 	    "<input id = 'captcha' name = 'captcha' class = 'captcha' placeholder = 'Captcha'"+
 	    "onkeyup = 'getInfo(this,2)' onblur = 'getInfo(this,2)'/>"+
-	    "<img  class = 'capimg' src = 'http://www.flappyant.com/secret/common/captcha.class.php?r=rand()' onclick = 'changeCaptcha(this)'/>"+
+	    "<img  class = 'capimg' src = './getCaptcha?r=rand()' onclick = 'changeCaptcha(this)'/>"+
 	    "<div class = 'warning-container' id = 'warning2'></div>"+
                 "<a id = 'signInBtn' class = 'submit-btn' href = 'javascript:submitSignUp();'>Sign Up</a></div></form>";
     var lWidth = document.documentElement.scrollWidth;
@@ -242,7 +242,7 @@ function json2html_county(json,insert_id){
 		}
 }
 function changeCaptcha(img){
-	img.src="http://www.flappyant.com/secret/common/captcha.class.php?r="+Math.random();
+	img.src="./getCaptcha?r="+Math.random();
 }
 //判断注册信息是否正确
 function getInfo(input,index)
