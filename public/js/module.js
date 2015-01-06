@@ -69,23 +69,26 @@
 		var array=json.forecast.temp1.split("~");
 		var temp1=array[0].split("℃");
 		var temp2=array[1].split("℃");
-		var temp;
+		var tempToday,tempTomorrow;
 		if(parseInt(temp1[0])>parseInt(temp2[0])){
-			temp=array[1]+"~"+array[0];
+			tempToday=array[1]+"~"+array[0];
 		}else{
-			temp=json.forecast.temp1;
+			tempToday=json.forecast.temp1;
+		}
+		array=json.forecast.temp2.split("~");
+		temp1=array[0].split("℃");temp2=array[1].split("℃");
+		if(parseInt(temp1[0])>parseInt(temp2[0])){
+			tempTomorrow=array[1]+"~"+array[0];
+		}else{
+			tempTomorrow=json.forecast.temp2;
 		}
 		$$(insert_id).innerHTML+="<a class = 'login-btn-grey' id = 'toSetCity' href = '#' onclick='showSetCityPanel();'>"+json.forecast.city+"</a>";
-		$$(insert_id).innerHTML+=" 今日天气："+json.today.weatherStart;
-		if(json.today.weatherStart!=json.today.weatherEnd){
-			$$(insert_id).innerHTML+="转"+json.today.weatherEnd;
-		}
-		$$(insert_id).innerHTML+=" 气温："+json.today.tempMin+"℃~";
-		$$(insert_id).innerHTML+=json.today.tempMax+"℃";
-		$$(insert_id).innerHTML+=" 明日天气： "+json.forecast.weather1;
-		$$(insert_id).innerHTML+=" 气温："+temp;
 		$$(insert_id).innerHTML+=" 当前："+json.realtime.temp+"℃";
-		$$(insert_id).innerHTML+=" pm2.5："+json.aqi.pm25;
+		$$(insert_id).innerHTML+=" 空气质量(AQI)："+json.aqi.aqi;
+		$$(insert_id).innerHTML+=" 今日天气："+json.forecast.weather1+" ";
+		$$(insert_id).innerHTML+=tempToday;
+		$$(insert_id).innerHTML+=" 明日天气："+json.forecast.weather2+" ";
+		$$(insert_id).innerHTML+=tempTomorrow;
 	}
 	function biliiframe(flag){
 		if(flag){

@@ -58,8 +58,8 @@
   <div class="container-fluid" style="margin-top:50px">
     <div class="row">
       <div class="main onepage-wrapper" style="position: relative; -webkit-transform: translate3d(0px, 0%, 0px); transition: all 1000ms ease; -webkit-transition: all 1000ms ease;">
-        <div class="col-xs-2 " id="socialsoft" style="width:10%;margin-left:20px"><!-- background-color:#eee;opacity:0.4; -->
-          <ul class="nav nav-pills nav-stacked" role="tablist" style="max-width: 100px;">
+        <div class="col-xs-2 " id="socialsoft" style="width:10%;margin-left:0.5%"><!-- background-color:#eee;opacity:0.4; -->
+          <ul class="nav nav-pills nav-stacked" role="tablist" style="min-width: 100px;">
             <li role="presentation"><a href="http://www.renren.com/" target="_blank"><img src="img/renren_logo.png" style="width:40px;"><span class='a'>人人</span></a></li>
             <li role="presentation"><a href="http://weibo.com/login.php" target="_blank"><img src="img/xinlangweibo_logo.png" style="width:40px;"><span class='a'>微博</span></a></li>
             <li role="presentation"><a href="https://wx.qq.com/" target="_blank"><img src="img/weixin_logo.png" style="width:40px;"><span class='a'>微信</span></a></li>
@@ -67,17 +67,17 @@
           </ul>
         </div>
         <!-- end of col-lg-2 -->
-        <div class="col-xs-8" style="margin-left:30px">
+        <div class="col-xs-8" style="margin-left:40px">
           <section class="page1 section active back" data-index="1" style="position: absolute; left: 0px; top: 0%;">
             <div class="page_container">
               <ul class="nav nav-tabs" role="tablist" >
-                <li role="presentation" class="active"> <a href="#Baidu" id="Baidu-tab" data-toggle="tab" aria-controls="Baidu"><img src="img/baidu_logo.png" style="width:60px;" /></a> </li>
-                <li role="presentation"> <a href="#Zhihu" id="Zhihu-tab" data-toggle="tab" aria-controls="Zhihu"><img src="img/zhihu_logo.jpg" style="width:50px;" /></a> </li>
-                <li role="presentation"> <a href="#Flvcd" id="Flvcd-tab" data-toggle="tab" aria-controls="Flvcd"><img src="img/flvcd_logo.png" style="width:60px;" /></a> </li>
-                <li role="presentation"> <a href="#Bilibili" id="Bilibili-tab" data-toggle="tab" aria-controls="Bilibili"><img src="img/bilibili_logo.jpg" style="width:60px;" /></a> </li>
-                <li role="presentation"> <a href="#Taobao" id="Taobao-tab" data-toggle="tab" aria-controls="Taobao"><img src="img/taobao_logo.png" style="width:60px;" /></a> </li>
-                <li role="presentation"> <a href="#Btbook" id="Btbook-tab" data-toggle="tab" aria-controls="Btbook"><img src="img/btbook_logo.png" style="width:60px;" /></a> </li>
-                <li role="presentation"> <a href="#Dazhong" id="Dazhong-tab" data-toggle="tab" aria-controls="Dazhong"><img src="img/dazhong_logo.png" style="width:60px;" /></a> </li>
+                <li role="presentation" class="active"> <a href="#Baidu" id="Baidu-tab" data-toggle="tab" aria-controls="Baidu"><img src="img/baidu_logo.png" style="height:17px;" /></a> </li>
+                <li role="presentation"> <a href="#Zhihu" id="Zhihu-tab" data-toggle="tab" aria-controls="Zhihu"><img src="img/zhihu_logo.jpg" style="height:17px;" /></a> </li>
+                <li role="presentation"> <a href="#Flvcd" id="Flvcd-tab" data-toggle="tab" aria-controls="Flvcd"><img src="img/flvcd_logo.png" style="height:17px;" /></a> </li>
+                <li role="presentation"> <a href="#Bilibili" id="Bilibili-tab" data-toggle="tab" aria-controls="Bilibili"><img src="img/bilibili_logo.jpg" style="height:17px;" /></a> </li>
+                <li role="presentation"> <a href="#Taobao" id="Taobao-tab" data-toggle="tab" aria-controls="Taobao"><img src="img/taobao_logo.png" style="height:17px;" /></a> </li>
+                <li role="presentation"> <a href="#Btbook" id="Btbook-tab" data-toggle="tab" aria-controls="Btbook"><img src="img/btbook_logo.png" style="height:17px;" /></a> </li>
+                <li role="presentation"> <a href="#Dazhong" id="Dazhong-tab" data-toggle="tab" aria-controls="Dazhong"><img src="img/dazhong_logo.png" style="height:17px;" /></a> </li>
                 <li role="presentation" class="dropdown"> <a href="#" id="myTabDrop1" class="dropdown-toggle" data-toggle="dropdown" aria-controls="myTabDrop1-contents"><img src="img/bus_logo.png" style="width:35px;height:25px" /><span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1" id="myTabDrop1-contents">
                     <li><a href="#dropdown_busLine" tabindex="-1" role="tab" id="dropdown_busLine-tab" data-toggle="tab" aria-controls="dropdown_busLine">BusLine</a></li>
@@ -176,7 +176,7 @@
           </section>
         </div>
         <!-- end of col-lg-8 -->
-        <div class="col-xs-2">
+        <div class="col-xs-2" id="top">
           <h5 id="top_tag" onselectstart="return false"  value=""></h5>
           <ul class="nav nav-pills nav-stacked"  role="tablist">
             <li role="presentation" id="top1"></li>
