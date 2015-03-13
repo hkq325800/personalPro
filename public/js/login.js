@@ -74,7 +74,7 @@ function showLoginPanel(){
     var msk = addMask();
     var ologin = document.createElement('div');
     ologin.id = "login-panel-container";
-    ologin.innerHTML =  "<form method = 'POST' action = './php/login.php' id = 'logIn' autocomplete='off'><div class = 'login-panel-container' >"+
+    ologin.innerHTML =  "<form method = 'POST' action = './php/login.php' id = 'logIn' autocomplete='off' onkeydown='if(window.event.keyCode==13){ submitLogIn();}'><div class = 'login-panel-container' >"+
                 "<input id = 'username' name = 'username' type='text' class='login-username' placeholder = 'UserName'/>"+
                 "<input id = 'password' name = 'password' type='password' class='login-username' placeholder = 'Password'/>"+
                 "<div id = 'warninginfo'class = 'warning-info'></div>"+
@@ -94,7 +94,7 @@ function showSignUpPanel(){
     var msk = addMask();
     var oSignUp = document.createElement('div');
     oSignUp.id = "login-panel-container";
-    oSignUp.innerHTML =  "<form method = 'POST' id = 'signUp' action = './php/login.php' autocomplete='off'><div class = 'login-panel-container'>"+
+    oSignUp.innerHTML =  "<form method = 'POST' id = 'signUp' action = './php/login.php' autocomplete='off' onkeydown='if(window.event.keyCode==13){ submitSignUp();}'><div class = 'login-panel-container'>"+
                 "<input id = 'username' name = 'username' type='text' class='login-username' placeholder = 'UserName' "+
 	    "onkeyup = 'getInfo(this,0)' onblur = 'getInfo(this,0)'/>"+
 	    "<div class = 'warning-container' id = 'warning0'></div>"+
@@ -125,7 +125,7 @@ function showCustomPanel(){
     if(!isWeibotop10)check[1]='';
     if(!isWeather)check[2]='';
     oset.id = "setting-panel-container";
-    oset.innerHTML =  "<form action = '' id = 'Custom' autocomplete='off' ><div class = 'login-panel-container'>"+
+    oset.innerHTML =  "<form action = '' id = 'Custom' autocomplete='off' onkeydown='if(window.event.keyCode==13){ saveCustom();}'><div class = 'login-panel-container'>"+
                 "<input id = 'isBiliframe' name = 'isBiliframe' type='checkbox' class='' value = 'isBiliframe' "+check[0]+"/>新番放送表"+
                 "<input id = 'isWeibotop10' name= 'isWeibotop10' type='checkbox' class='' value = 'isWeibotop10' "+check[1]+"/>微博热搜榜"+
                 "<input id = 'isWeather' name = 'isWeather' type='checkbox' value = 'isWeather' "+check[2]+"/>天气预报"+
@@ -145,7 +145,7 @@ function showSetCityPanel(){
 	var msk = addMask();
     var oset = document.createElement('div');
     oset.id = "setting-panel-container";
-    oset.innerHTML =  "<form method = 'POST' action = './php/setcity.php' id = 'SetCity' autocomplete='off'><div class = 'login-panel-container'>"+
+    oset.innerHTML =  "<form method = 'POST' action = './php/setcity.php' id = 'SetCity' autocomplete='off' onkeydown='if(window.event.keyCode==13){ saveSetCity();}'><div class = 'login-panel-container'>"+
     			"选择城市："+
     			"<div class='cityselect'>"+
     			"<select id='province' name='province' onChange='getcity();'>"+

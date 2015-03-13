@@ -83,11 +83,11 @@
 			tempTomorrow=json.forecast.temp2;
 		}
 		$$(insert_id).innerHTML+="<a class = 'login-btn-grey' id = 'toSetCity' href = '#' onclick='showSetCityPanel();'>"+json.forecast.city+"</a>";
-		$$(insert_id).innerHTML+=" 当前："+json.realtime.temp+"℃";
+		$$(insert_id).innerHTML+="| 当前："+json.realtime.temp+"℃ |";
 		$$(insert_id).innerHTML+=" 空气质量(AQI)："+json.aqi.aqi;
-		$$(insert_id).innerHTML+=" 今日天气："+json.forecast.weather1+" ";
+		$$(insert_id).innerHTML+=" | 今日天气："+json.forecast.weather1+" ";
 		$$(insert_id).innerHTML+=tempToday;
-		$$(insert_id).innerHTML+=" 明日天气："+json.forecast.weather2+" ";
+		$$(insert_id).innerHTML+=" | 明日天气："+json.forecast.weather2+" ";
 		$$(insert_id).innerHTML+=tempTomorrow;
 	}
 	function biliiframe(flag){
@@ -96,3 +96,26 @@
 		}
 		else return;
 	}
+	//选择上传文件是调用的函数
+/*function readAsDataURL(f){
+	//var result=$$('result');
+	//var file=$$('Files').files[0];
+	//检测浏览器是否支持FileReader对象
+	if(typeof FileReader == 'undefined'){
+		alert("检测到您的浏览器不支持FIleReader对象！");
+	}
+	if(!/image\/\w+/.test(file.type)){
+		alert('请确保文件为图像类型');
+		return false;
+	}
+	var strHTML="";
+	for(var intI=0;intI<f.length;intI++){
+		var tmpFile=f[intI];
+		var reader=new FileReader();
+		reader.readAsDataURL(tmpFile);
+		reader.onload=function(e){
+			var result=$$('result');
+			result.innerHTML='<img src="'+this.result+'" alt=""/>'
+		}
+	}
+}*/

@@ -45,10 +45,12 @@
 <body style="width:100%;" onkeydown="if(window.event.keyCode==13){ window.event.keyCode=9}" background="./img/2.jpg" onselectstart="return false">
 <!-- <audio src="hifi raver.mp3" autoplay="true" loop="true" style=""></audio> -->
 <div class=face>
-  <header class = "head-container" onselectstart="return false"> <a class = "logo-container" style="margin-top:6px"><img src="./img/logo.jpg" style="width:37px;margin-right:3px;margin-top:-8px;margin-left:-10px;margin-bottom:-5px;" /> <span id="welcome">Personal Pro 欢迎你！</span> <span style="margin-left:5px">
+  <header class = "head-container" onselectstart="return false"> <a class = "logo-container" style="margin-top:3px"><img src="./img/logo.jpg" style="width:40px;margin-top:-8px;margin-left:-10px;margin-bottom:-5px;" /> <span id="welcome">Personal Pro 欢迎你！</span> <span style="margin-left:5px">
     <?php if(is_login())echo current_account()?>
     </span> <span id="weather" style="padding-left:0px"></span></a>
     <div class = "login-container"> 
+    
+
     <a class = "login-btn-grey" id = "toLogIn" href = "#"  <?php if(is_login()) echo 'style="display:none"' ?>>Log In</a> 
     <a class = "login-btn-grey" id = "toSignUp" href = "#" <?php if(is_login()) echo 'style="display:none"' ?>>Sign Up</a> 
     <a class = "login-btn-grey" id = "toCustom" href= "#" <?php if(!is_login()) echo 'style="display:none"' ?>>Setting</a> 
@@ -71,9 +73,9 @@
           <section class="page1 section active back" data-index="1" style="position: absolute; left: 0px; top: 0%;">
             <div class="page_container">
               <ul class="nav nav-tabs" role="tablist" >
-                <li role="presentation" class="active"> <a href="#Baidu" id="Baidu-tab" data-toggle="tab" aria-controls="Baidu"><img src="img/baidu_logo.png" style="height:17px;" /></a> </li>
-                <li role="presentation"> <a href="#Zhihu" id="Zhihu-tab" data-toggle="tab" aria-controls="Zhihu"><img src="img/zhihu_logo.jpg" style="height:17px;" /></a> </li>
-                <li role="presentation"> <a href="#Flvcd" id="Flvcd-tab" data-toggle="tab" aria-controls="Flvcd"><img src="img/flvcd_logo.png" style="height:17px;" /></a> </li>
+                <li role="presentation" class="active"> <a href="#Baidu" id="Baidu-tab" data-toggle="tab" aria-controls="Baidu"><img src="img/baidu_logo.png" style="height:17px;width:50px;" /></a> </li>
+                <li role="presentation"> <a href="#Zhihu" id="Zhihu-tab" data-toggle="tab" aria-controls="Zhihu"><img src="img/zhihu_logo.jpg" style="height:17px;width:35px;" /></a> </li>
+                <li role="presentation"> <a href="#Flvcd" id="Flvcd-tab" data-toggle="tab" aria-controls="Flvcd"><img src="img/flvcd_logo.png" style="height:17px;width:45px;" /></a> </li>
                 <li role="presentation"> <a href="#Bilibili" id="Bilibili-tab" data-toggle="tab" aria-controls="Bilibili"><img src="img/bilibili_logo.jpg" style="height:17px;" /></a> </li>
                 <li role="presentation"> <a href="#Taobao" id="Taobao-tab" data-toggle="tab" aria-controls="Taobao"><img src="img/taobao_logo.png" style="height:17px;" /></a> </li>
                 <li role="presentation"> <a href="#Btbook" id="Btbook-tab" data-toggle="tab" aria-controls="Btbook"><img src="img/btbook_logo.png" style="height:17px;" /></a> </li>
@@ -165,6 +167,12 @@
                   </div>
                 </div>
               </div>
+	<!-- <div>
+		<input type="file" id="Files" name="files[]" accept="image/*" multiple onclick="readAsDataURL"/>
+		<ul id="Errors"></ul>
+		<div style="color: #ccc; font-size: 10px;">如果需要查看原始尺寸图片，可点击相应图片；再次单击该图片，则恢复小图片。</div>
+		<div id="result"></div>
+	</div> -->
               <!-- end of tab-content --> 
             </div>
             <!-- end of page_container --> 
