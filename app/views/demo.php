@@ -42,7 +42,7 @@
 </head>
 <script>var userid = "<?php if(is_login()){echo current_userid();}else {echo '0';} ?>";var thiscity = "<?php echo current_city(); ?>";</script>
 
-<body style="width:100%;" onkeydown="if(window.event.keyCode==13){ window.event.keyCode=9}" background="./img/2.jpg" onselectstart="return false">
+<body style="width:100%;" onkeydown="if(window.event.keyCode==13){ window.event.keyCode=9}" background="./img/1.jpg" onselectstart="return false">
 <!-- <audio src="hifi raver.mp3" autoplay="true" loop="true" style=""></audio> -->
 <div class=face>
   <header class = "head-container" onselectstart="return false"> <a class = "logo-container" style="margin-top:3px"><img src="./img/logo.jpg" style="width:40px;margin-top:-8px;margin-left:-10px;margin-bottom:-5px;" /> <span id="welcome">Personal Pro 欢迎你！</span> <span style="margin-left:5px">
@@ -177,7 +177,7 @@
             </div>
             <!-- end of page_container --> 
           </section>
-          <section class="page2 section" data-index="2" style="position: relative; left: 0px; top: 500px;opacity:0.4;">
+          <section class="page2 section" data-index="2" style="position: relative; left: 0px; top: 500px;opacity:0.7;">
             <div class="page_container">
               <div id="bili_iframe" ></div>
             </div>
