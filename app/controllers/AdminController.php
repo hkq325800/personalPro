@@ -114,7 +114,7 @@ class AdminController extends BaseController {
 	}*/
 	public function getWeibotop10(){
 		//echo vget("http://www.bilibili.com/")
-		$html=file_get_contents('http://s.weibo.com/');//拉取初始文件
+		$html=file_get_contents('http://s.weibo.com/top/summary');//拉取初始文件
 		$inner='http://s.weibo.com';
 		$result=substr($html,stripos($html,'<div class="search_newrec_box clearfix">'),stripos($html,'<!-- /pl_todayhot -->')-stripos($html,'<div class="search_newrec_box clearfix">')+strlen('<!-- /pl_todayhot -->'));//截取正确的部分
 		//截取正确部分中需要的字节

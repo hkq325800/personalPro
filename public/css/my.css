@@ -32,11 +32,11 @@
 	position:relative;
 }
 .iframe{
-	width:1024px;
-	height:1930px; 
+	width:730px;
+	height:2220px; 
 	position:absolute; 
-	top:-1560px;
-	left:-19px; 
+	top:-1830px;
+	left:-9px; 
 	/*right:-302px;*/
 }
 #bili_iframe{
@@ -90,10 +90,10 @@
 	position: fixed;
 	left: 0%;
 	bottom: 0px;
-	margin-left:13.4%;
+	margin-left:12.8%;
 	background-color: rgba(37,37,37,0.5);
 	height: 41px;
-	width: 66.8%;
+	width: 66.7%;
 	/*min-width: 800px;*/
 
 	font-size: 12px;

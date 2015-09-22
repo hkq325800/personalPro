@@ -177,7 +177,7 @@
             </div>
             <!-- end of page_container --> 
           </section>
-          <section class="page2 section" data-index="2" style="position: relative; left: 0px; top: 500px;opacity:0.7;">
+          <section class="page2 section" data-index="2" style="position: relative; left: 0px; top: 630px;opacity:0.7;">
             <div class="page_container">
               <div id="bili_iframe" ></div>
             </div>
